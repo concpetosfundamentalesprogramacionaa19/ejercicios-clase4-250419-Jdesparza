@@ -19,11 +19,12 @@ public class SeleccionSimple {
         
         // importamos a la libreria para poder ingresar datos por teclado
         Scanner entrada = new Scanner(System.in);
-        // int calificacion = 85;
         
         // método principal
         String miMensaje = Operacion.mensaje;
         
+         // int calificacion = 85;
+         
         // ingreso de la calificacion por teclado
         System.out.print("Por favor ingrese la primera calificacion: ");
         int calificacion = entrada.nextInt();

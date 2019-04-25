@@ -19,11 +19,12 @@ public class SeleccionDoble {
         
         // importamos a la libreria para poder ingresar datos por teclado
         Scanner entrada = new Scanner(System.in);
-        // int calificacion = 85;
         
         // método principal
         String miMensaje = Operacion.mensaje;
         String miMensaje2 = Operacion.mensaje2;
+        
+        // int calificacion = 85;
         
         // ingreso de las calificaciones por teclado
         System.out.print("Por favor ingrese la primera calificacion: ");
@@ -50,7 +51,8 @@ public class SeleccionDoble {
         
         // Condicional 2
         if (calificacion_2 >= 85){
-            // System.out.printf("Usted está aprobado con %d\n",calificacion_2);
+            // System.out.printf("Usted está aprobado con %d\n",
+            // calificacion_2);
             System.out.printf("%s %d\n", miMensaje, calificacion_2);
         }else {
             // System.out.printf("Usted está reprobado con %d\n",
