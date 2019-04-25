@@ -12,7 +12,7 @@ import paquetedos.*;
  *
  * @author PC
  */
-public class SeleccionSimple {
+public class SeleccionDoble {
     
     public static void main(String[] args) {
         // documentacion
@@ -23,8 +23,9 @@ public class SeleccionSimple {
         
         // método principal
         String miMensaje = Operacion.mensaje;
+        String miMensaje2 = Operacion.mensaje2;
         
-        // ingreso de la calificacion por teclado
+        // ingreso de las calificaciones por teclado
         System.out.print("Por favor ingrese la primera calificacion: ");
         int calificacion = entrada.nextInt();
         
@@ -32,21 +33,29 @@ public class SeleccionSimple {
         int calificacion_2 = entrada.nextInt();
         
         /*
-         * El Si_Entonces sirve para imprimir un mensaje solamente cuando se
-         * cumpla la condicion dada
+         * El SiNo_Entonces sirve en el caso de que no se cumpla la primera
+         * condicion entonces utilice la segunda.
         */
-        // Condicion 1
+        
+        // Condicional 1
         if (calificacion >= 85) {
             // System.out.printf("Usted está aprobado con %d\n", calificacion);
             System.out.printf("%s %d\n", miMensaje, calificacion);
+        } else {
+            // System.out.printf("Usted está reprobado con %d\n", calificacion);
+            System.out.printf("%s %d\n", miMensaje2, calificacion);
         }
         
         // int calificacion_2 = 45;
         
-        // Condicion 2
+        // Condicional 2
         if (calificacion_2 >= 85){
             // System.out.printf("Usted está aprobado con %d\n",calificacion_2);
             System.out.printf("%s %d\n", miMensaje, calificacion_2);
+        }else {
+            // System.out.printf("Usted está reprobado con %d\n",
+            // calificacion_2);
+            System.out.printf("%s %d\n", miMensaje2, calificacion_2);
         }
     }
 }
